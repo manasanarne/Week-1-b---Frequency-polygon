@@ -5,7 +5,7 @@ Rollno <- c("Y20CS110","Y20CS124","Y20CS135","Y20CS176","Y20CS093")
 Gender <- c("Female","Female","Female","Female","Female")
 Marks <-c(9,3,6,8,9)
 Fee <-c(69400,57892,58903,69400,67390)
-Section <-c("C","B","C","B","B")
+Section <-c("B","B","C","C","B")
 
 rvrstudents <-data.frame(Names,Rollno,Gender,Marks,Fee,Section)
 rvrstudents
@@ -26,14 +26,14 @@ OUTPUT:
 > Gender <- c("Male","Female","Female","Female","Male")
 > Marks <-c(9,3,6,8,9)
 > Fee <-c(69400,57892,58903,69400,67390)
-> Section <-c("C","B","C","B","B")
+> Section <-c("B","B","C","C","B")
 > rvrstudents <-data.frame(Names,Rollno,Gender,Marks,Fee,Section)
 > rvrstudents
     Names     Rollno   Gender   Marks    Fee    Section
-1  MANASA    Y20CS110  Female    9      69400      C
+1  MANASA    Y20CS110  Female    9      69400      B
 2  VARSHA    Y20CS124  Female    3      57892      B
 3 SASWITHA   Y20CS135  Female    6      58903      C
-4  SREYA     Y20CS176  Female    8      69400      B
+4  SREYA     Y20CS176  Female    8      69400      C
 5  PRAGNA    Y20CS093  Female    9      67390      B
 > write.csv(rvrstudents,"Rvr_Students.csv",row.names=F)
 > a <- read.csv("Rvr_Students.csv")
